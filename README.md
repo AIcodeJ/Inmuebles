@@ -1,54 +1,61 @@
-# Sitio de Propiedades Inmobiliarias 👨🏻‍🏫
+# Proyecto de Remates Inmobiliarios 👨🏻‍🏫
 
-_Esto es un sistema de 
-índice de masa corporal para conocer más acerca de nuestra salud hecho en Java utilizando RESTful, Spring Framework,  Tomcat Server y Heroku_
+Este proyecto utiliza Laravel y XAMPP para crear una aplicación web dedicada a remates inmobiliarios. La aplicación permite a los usuarios buscar propiedades en remate, gestionar expedientes y conectar compradores potenciales con propiedades disponibles.
 
-## Comenzando 🚀
+## Requisitos Previos
 
-_Esto es un ejercicio avanzado para realizar en Java con aplicaciones web, concretamente vemos como funcionará esta simulación viendo los que son clases y otros temas._
+- Asegúrate de tener [XAMPP](https://www.apachefriends.org/index.html) instalado en tu sistema.
+- Se recomienda tener [Composer](https://getcomposer.org/) instalado para gestionar las dependencias de Laravel.
 
+## Configuración
 
-### Pre-requisitos 📋
+1. Clona el repositorio en tu directorio de proyectos local:
 
-_Vamos a necesitar lo siguiente_
+   ```bash```
+   git clone https://github.com/tuusuario/remates-inmobiliarios.git
 
-```
-1. JDK versión 11 (más reciente)
-2. IDE de tu preferencia
-3. El .jar que se deja en la etiqueta del proyecto para ejecutarlo
-4. Acceder a los administrador a través de la admin: Alexis y password: 1234
-```
+2. Inicia tu servidor XAMPP y asegúrate de que Apache y MySQL estén en funcionamiento.:
+3. Configura la base de datos en el archivo .env ubicado en la raíz del proyecto. Debes configurar los siguientes valores:
 
-### Instalación 🔧
+   ```sql```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=tubasededatos
+   DB_USERNAME=tuusuario
+   DB_PASSWORD=tucontraseña
 
-_Realizaremos lo siguiente_
+4. Ejecuta las siguientes comandos en la terminal para preparar la base de datos y las dependencias:
 
-_Paso 1: Instalar JDK 11_
+   ```bash```
+   composer install
+   php artisan key:generate
+   php artisan migrate
+   php artisan db:seed
 
-```
-Ingresa a la pagina de Oracle, descarga el JDK de acuerdo a tu sistema operativo e instalalo
-```
+5. Inicia el servidor de desarrollo de Laravel:
 
-_Paso 2: Configurar el IDE_
+   ```bash```
+   php artisan serve
 
-```
-En este caso, utilice Netbeans para poder trabajar en este proyecto, tú puedes usar el que gustes :)
+6. Abre tu navegador y accede a http://localhost:8000 para ver la aplicación.
 
-* 1. Abre el IDE y crea un nuevo proyecto
-* 2. Selecciona la versión del JDK
-* 3. Selecciona la ruta donde vas a guardar tu proyecto y listo
-```
+## Estructura del proyecto
 
-## Construido con 🛠️
+El proyecto sigue la estructura típica de un proyecto Laravel:
 
-_Estas son las herramientas que utilizamos para el proyecto_
+app: Contiene los modelos y controladores de la aplicación.
+database: Incluye las migraciones y los archivos de semillas para la base de datos.
+resources/views: Aquí se encuentran los archivos Blade.php que definen las vistas de la aplicación.
 
-* [JDK](https://www.oracle.com/mx/java/technologies/javase/jdk11-archive-downloads.html) - Kit de desarrollo de Java
-* [Netbeans](https://netbeans.apache.org/download/nb15/) - El IDE de desarrollo que use
-* [Git](https://www.jetbrains.com/es-es/idea/) - Para el control de versiones del proyecto
-* [Tomcat](https://tomcat.apache.org/download-90.cgi) - Servidor para visualizar en navegadores web
-* [Spring Framework](https://spring.io/projects/spring-framework) - Dependencia de Spring con RESTful
-* [Heroku](https://www.heroku.com/platform) - Base de datos a través de la nube
+## Archivos Blade.php
+Los archivos Blade.php en la carpeta resources/views definen las vistas de la aplicación. Algunas vistas clave incluyen:
+
+* resources/views/propiedades/index.blade.php: La vista para mostrar la lista de propiedades en remate.
+* resources/views/expedientes/index.blade.php: La vista para mostrar el historial de expedientes.
+* resources/views/compradores/index.blade.php: La vista para mostrar la lista de compradores potenciales.
+* resources/views/personal/index.blade.php: La vista para mostrar la lista de personal.
+* resources/views/layouts/app.blade.php: La plantilla principal de la aplicación que define la estructura común de las páginas.
 
 ## Versionado 📌
 
