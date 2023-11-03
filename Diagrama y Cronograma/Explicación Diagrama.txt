@@ -1,0 +1,21 @@
+Navegador Web (Cliente): Aquí es donde los usuarios interactúan con tu aplicación a través de un navegador web.
+
+Servidor Web (XAMPP): XAMPP proporciona un entorno de desarrollo local que incluye Apache para el servidor web, MySQL para la base de datos y PHP como lenguaje de servidor.
+
+Apache (HTTP Server): Apache es el servidor web que maneja las solicitudes HTTP entrantes y dirige el tráfico hacia la aplicación Laravel.
+
+MySQL (Database): MySQL es un sistema de gestión de bases de datos relacional que almacena y administra los datos de tu aplicación.
+
+PHP (Laravel): Laravel es el framework de PHP que proporciona la estructura y las herramientas para desarrollar la lógica de la aplicación.
+
+Application Logic: Aquí es donde resides la lógica de tu aplicación, incluyendo rutas, controladores, modelos y vistas. Laravel maneja las solicitudes HTTP, rutas y la interacción con la base de datos.
+
+Routes: Las rutas de Laravel definen cómo se manejan las solicitudes entrantes y qué controladores se ejecutan para responder a esas solicitudes.
+
+Controllers: Los controladores son responsables de manejar la lógica de negocio de la aplicación.
+
+Models: Los modelos representan y gestionan la interacción con la base de datos.
+
+Views (Blade): Las vistas determinan la presentación de la información y se crean en el motor de plantillas Blade de Laravel.
+
+Este diagrama ofrece una visión general de cómo se estructura y cómo interactúan los componentes en un proyecto típico de Laravel en un entorno de desarrollo local con XAMPP.
