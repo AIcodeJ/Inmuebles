@@ -1,0 +1,20 @@
+/* public/css/styles.css */
+
+body {
+    padding-top: 5rem;
+}
+
+.btn-margin {
+    margin-top: 1rem;
+}
+
+.table {
+    margin-top: 2rem;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Agrega más estilos según tus necesidades */
