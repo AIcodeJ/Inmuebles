@@ -85,11 +85,11 @@ resources/views: Aquí se encuentran los archivos Blade.php que definen las vist
 _Los archivos Blade.php en la carpeta resources/views definen las vistas de la aplicación. Algunas vistas clave incluyen:_
 
 ```
-* resources/views/propiedades/index.blade.php: La vista para mostrar la lista de propiedades en remate.
-* resources/views/expedientes/index.blade.php: La vista para mostrar el historial de expedientes.
-* resources/views/compradores/index.blade.php: La vista para mostrar la lista de compradores potenciales.
-* resources/views/personal/index.blade.php: La vista para mostrar la lista de personal.
-* resources/views/layouts/app.blade.php: La plantilla principal de la aplicación que define la estructura común de las páginas.
+resources/views/properties/index.blade.php: La vista para mostrar la lista de propiedades en remate. 
+resources/views/expedients/index.blade.php: La vista para mostrar el historial de expedientes.
+resources/views/buyers/index.blade.php: La vista para mostrar la lista de compradores potenciales.
+resources/views/personals/index.blade.php: La vista para mostrar la lista de personal.
+resources/views/layouts/app.blade.php: La plantilla principal de la aplicación que define la estructura común de las páginas.
 ```
 
 ## Versionado 📌
