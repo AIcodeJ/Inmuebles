@@ -1,0 +1,46 @@
+name: Laravel Integration Tests
+
+on:
+  push:
+    branches:
+      - main  # Reemplaza 'main' con la rama que desees
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      xampp:
+        image: tomsik68/xampp:latest
+        ports:
+          - 80:80
+          - 443:443
+        env:
+          XAMPP_MYSQL_USER: root
+          XAMPP_MYSQL_PASSWORD: 
+        options: --name xampp
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.4
+
+      - name: Install Composer Dependencies
+        run: composer install
+
+      - name: Prepare Laravel Environment
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+          php artisan config:cache
+
+      - name: Run Database Migrations
+        run: php artisan migrate
+
+      - name: Run Integration Tests
+        run: php artisan test
+
