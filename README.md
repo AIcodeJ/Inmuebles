@@ -25,7 +25,7 @@ Se puede encontrar una descripción detallada de la arquitectura en la carpeta D
 - Se recomienda tener [Composer](https://getcomposer.org/) instalado para gestionar las dependencias de Laravel.
 
 ## Configuración
-```
+
 1. Clona el repositorio en tu directorio de proyectos local:
 
    ```git clone https://github.com/tuusuario/remates-inmobiliarios.git```
@@ -33,7 +33,6 @@ Se puede encontrar una descripción detallada de la arquitectura en la carpeta D
 2. Inicia tu servidor XAMPP y asegúrate de que Apache y MySQL estén en funcionamiento:
 3. Configura la base de datos en el archivo .env ubicado en la raíz del proyecto. Debes configurar los siguientes valores:
 
-   ```sql```
    ```
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
@@ -45,7 +44,6 @@ Se puede encontrar una descripción detallada de la arquitectura en la carpeta D
 
 4. Ejecuta las siguientes comandos en la terminal para preparar la base de datos y las dependencias:
 
-   ```bash```
    ```   
    composer install
    php artisan key:generate
@@ -60,7 +58,7 @@ Se puede encontrar una descripción detallada de la arquitectura en la carpeta D
    ```
 
 6. Abre tu navegador y accede a http://localhost:8000 para ver la aplicación.
-```
+
 
 ## Configuración
 _Configuración del Producto:_
